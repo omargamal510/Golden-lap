@@ -1,0 +1,569 @@
+* {
+    padding:0;
+    margin:0;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    outline:none;
+    font-family: 'Raleway', sans-serif;
+    outline:none;
+}
+
+/* Start Loader */
+.load-div {
+    background-color:#333;
+    min-height:calc(100vh - 0px);
+    z-index:3;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    color:#FFF;
+    text-align:center;
+    overflow:hidden;
+}
+
+.load-div section {
+    margin-top:255px;
+}
+
+.load-div div {
+    width:75px;
+    height:75px;
+    margin:20px auto;
+    border:5px solid #FFF;
+    border-top:5px solid #333;
+    border-radius:50%;
+    text-align:center;
+    animation: flip .5s  infinite reverse;
+}
+
+@keyframes flip {
+    from {
+        transform:rotate(0);
+    }
+
+    to {
+        transform:rotate(360deg);
+    }
+}
+/* End Loader */
+
+
+/* Start Right Slider */
+
+.right-slider {
+    margin-top:60px;
+    display:none;
+    background-color:#000;
+}
+
+.right-slider ul {
+    color:#fff;
+    padding:15px;
+}
+
+.right-slider ul:hover {
+    background-color:#DDD;
+    color:#000;
+}
+
+
+/* End Right Slider */
+
+
+
+/* Start Navbar */
+
+nav {
+    display:none;
+    height: 60px;
+    background-color:#FFF;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index:2;
+}
+
+nav h4 {
+    float:left;
+    margin-top:-3px;
+    padding:22px;
+    
+}    
+
+nav h4:hover {
+    background-color:#BBB;
+    transition:all .2s linear;
+}
+
+nav .links {
+    margin-right:2px;
+    
+}
+
+nav .links span {
+    float:right;    
+    color:#000;
+    padding:20px;
+}
+
+nav .links span:hover {
+    background-color:#BBB;
+    transition:all .2s linear;
+}
+
+nav .slide-button {
+    float:right;
+    padding:6px 17px;
+    margin:12px;
+    border:none;
+    text-align: center;
+    font-weight: bold;
+    border-radius:5px;
+    background:None;
+    transition:all .2s ease-in-out;
+}
+
+nav .slide-button:active {
+    background-color:#DDD;
+}
+
+.down {
+    transform:rotate(90deg);
+}
+
+
+/* End Navbar */
+
+/* Start Slider */
+
+.slider {
+    height:600px;
+    background:url('https://imgur.com/ueorOgP.jpg') center center;
+    background-size:cover;
+    color:#FFF;
+    margin-top:-10px;
+}
+
+.slider .slider-data {
+    opacity:0;
+    margin-left:-50px;
+    transition:all .3s linear;
+}
+
+.slider h1 {
+    font-size:45px;
+    margin-top:150px;
+    font-weight: bolder;
+    margin-bottom:50px;
+}
+
+.slider p {
+    font-size:20px;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.slider button {
+    margin-top:20px;
+    background:none;
+    background-color:#000;
+    border:1px solid #000;
+    color:#fff;
+    padding:15px 20px;
+    opacity:.7;
+    transition:all .2s linear;
+    font-size:16px;
+}
+
+.slider button:hover {
+    opacity:1;
+}
+
+
+
+/* End Slider */
+
+
+
+/* Start About */
+.about {
+    margin-top:70px;
+    text-align: center;
+    color:#000;
+    overflow:hidden;
+}
+
+
+.about .about-p {
+    margin-top:35px;
+    margin-bottom:60px;
+    font-size:20px;
+}
+
+.about section  {
+    margin-top:40px;
+    cursor:pointer;
+}
+
+.about section h3 {
+    font-weight:bold;
+    margin-top:40px;
+    margin-bottom:25px;
+}
+
+.about section p {
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.about section:hover {
+    transition:all .3s linear;
+    color:#F00;
+}
+
+
+/* End About */
+
+/* Start About2 */
+
+.second {
+    background-color:#000;
+    margin-top:100px;
+    color:#FFF;
+}
+
+.second h3 {
+    font-weight: bold;
+}
+
+.second p {
+    line-height: 30px;
+}
+
+.second button {
+    background:#FFF;
+    border:none;
+    color:#000;
+    padding:10px 15px;
+    transition:all .2s linear;
+    margin-top:30px;
+}
+
+.second button:hover {
+    background-color:#F00;
+    color:#fff;
+    border-radius:50px;
+}
+
+.second section:first-of-type {
+    margin-bottom:30px;
+}
+
+.second section:last-of-type {
+    background:url('https://imgur.com/rnkAGys.jpg') center center;
+    background-size:cover;
+    height:300px;
+    background-color:#FFF;
+}
+
+/* End About2 */
+
+
+/* Start Team */
+.team {
+    margin-top:70px;
+    perspective:30000px;
+}
+
+.team section {
+    overflow:hidden;
+    margin-bottom:20px;
+    -webkit-box-shadow: 2px 2px  .5px #BBB;
+    -moz-box-shadow: 2px 2px 2px .5px #BBB;
+    box-shadow: 2px 2px 2px .5px #BBB;
+    transition:all .3s linear;
+    
+}
+
+.team h2 {
+    text-align:center;
+}
+
+
+.team section h3 {
+    margin-left:10px;
+    font-weight: bold;
+}
+
+.team section p {
+    font-weight:bold;
+}
+ 
+.team section p:first-of-type {
+    font-size:16px;
+    margin-top:23px;
+    text-align:none;
+    margin-left:10px;
+}
+
+.team section p:last-of-type {
+    margin-left:10px;
+}
+
+
+.team section button {
+    padding:8px 0px;
+    margin-left:10px;
+    margin-bottom:10px;
+    background-color:#EEE;
+    border:none;
+    transition:all .3s linear;
+    text-align:center;
+}
+
+.team section:hover button {
+    background-color:#FFF;
+    color:#000;
+}
+
+.team section button:hover {
+    border-radius:20px;
+    background-color:#333;
+    color:#FFF;
+}
+
+/*
+
+@media (max-width: 320px) {
+    .team section {
+        width:90%;
+        margin-left:10px;
+        float:left;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .team section {
+        width:43.5%;
+        margin-left:10px;
+        float:left;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .team section {
+        width:45%;
+        margin-left:10px;
+        float:left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .team section {
+        width:23.5%;
+        float:left;
+        margin-left:10px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .team section {
+        width:23.5%;
+        float:left;
+        margin-left:10px;
+    }
+    
+}
+
+*/
+
+.team section:hover {
+    -webkit-transform:translate3d(0, 0 , 500px);
+    -moz-transform:translate3d(0, 0 , 500px);
+    transform:translate3d(0, 0 , 500px);
+
+    -webkit-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    transition:all .3s linear;
+    
+    background-color:#eee;
+    color:#000;
+}
+
+
+
+/* End Team */
+
+
+/* Start Numbers */
+
+.numbers {
+    margin-top:60px;
+    background-color:#555;
+    color:#FFF;
+    text-align:center;
+    padding:50px 0px;
+}
+
+/* End Numbers */
+
+
+
+/* Start Our Works */
+.works {
+    margin-top: 70px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.works img {
+    margin-top:20px;
+    position:relative;
+    opacity:.6;
+    -webkit-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -o-transition:all .3s linear;
+    transition:all .3s linear;
+}
+
+.works img:hover {
+    opacity:1;
+    border-radius:50%;
+}
+
+
+/* End Our Works */
+
+
+/* Start Our Skills */
+.skills {
+    background-color:#EEE;
+    margin-top:100px;
+}
+
+.skills-statics {
+    margin-top:30px;
+}
+
+.skills p {
+    letter-spacing:3px;
+    font-weight:400;
+}
+
+.skills-statics section {
+    text-align:center;
+    padding:10px 70px;
+    border:1px solid #333;
+    position:relative;
+}
+
+.skills-statics section .photography {
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:90%;
+    color:#FFF;
+    background-color:#333;
+}
+
+.skills-statics section .wd {
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:85%;
+    color:#FFF;
+    background-color:#333;
+}
+
+.skills-statics section .ps {
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:80%;
+    color:#FFF;
+    background-color:#333;
+}
+
+/* End Our Skills */
+
+
+
+/* Start Contact */
+.contact {
+    background-color:#555;
+    margin-top:150px;
+    color:#FFF;
+}
+
+.contact h2 {
+    text-align:center;
+}
+.contact p {
+    text-align:center;
+}
+
+.contact input {
+    text-align:center;
+    padding:10px 0px;
+    color:#000;
+    width:50%;
+    margin:20px auto;
+    display:block;
+    float:none;
+    border-radius:10px;
+    border:none;
+}
+
+.contact button {
+    padding:10px 15px;
+    background-color:#000;
+    border:none;
+    margin:15px auto;
+    display: block;
+    -webkit-transition:all .2s linear;
+    -moz-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear;
+}
+
+.contact button:hover {
+    background-color:#F00;
+    border-radius:20px;
+}
+
+/* End Contact */
+
+
+/* Start Footer */
+
+footer {
+    background-color:#000;
+    color:#FFF;
+    padding:35px 0px;
+}
+
+footer .icons {
+    text-align:center;
+}
+
+footer .icons a {
+    text-decoration:none;
+    margin-left:3px;
+    color:#FFF;
+    font-size:25px;
+}
+
+footer .icons a:hover {
+    opacity:.5;
+}
+
+/* End Footer */
